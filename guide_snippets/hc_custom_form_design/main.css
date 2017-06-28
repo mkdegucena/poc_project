@@ -1,0 +1,82 @@
+.background-form {
+  background:url($homepage_background_image);
+  background-repeat:no-repeat;
+  background-size: cover;
+  min-height: 65vh;
+  margin-bottom: -60px;
+}
+
+.request_ticket_form_id {
+  display:none;
+}
+
+.sub-form-bg {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  background: #fff;
+}
+
+.sub-form-bg .sub-nav {
+  margin-bottom:60px;
+}
+
+.zd-form {
+  margin:auto;
+  background:#fff;
+  padding:35px;
+  margin-bottom:60px;
+}
+
+.zd-form h3 {
+  text-align:center;
+  font-size:22px;
+  font-weight:200;
+}
+
+.zd-form .form-field label {
+  text-align:center;
+  margin-bottom:5px;
+}
+
+.zd-form footer {
+  text-align:center;
+}
+
+.zd-form footer input[type=submit] {
+  padding: 5px;
+  min-width: 200px;
+  font-size: 18px;
+}
+
+.zd-form-box {
+  background: $color_1;
+  width: 270px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.zd-form-box h2 {
+  font-size:18px;
+  font-weight:200;
+  padding: 20px;
+  margin: 0;
+}
+
+.zd-form-link {
+  color:#fff;
+}
+
+.zd-form-link:hover {
+  text-decoration:none;
+}
+
+.custom-divider {
+  border-top:1px solid transparent;
+}
+
+@media (max-width: 765px) {
+  .zd-form-box {
+    width:100% !important;
+  }
+}
