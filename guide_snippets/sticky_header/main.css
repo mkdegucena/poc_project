@@ -1,0 +1,15 @@
+.header-wrapper.clone.down {
+  transform: translateY(0);
+}
+
+.header-wrapper.clone {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: .5s transform cubic-bezier(.3,.73,.3,.74);
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.11);
+}

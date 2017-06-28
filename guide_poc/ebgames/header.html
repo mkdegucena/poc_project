@@ -1,0 +1,49 @@
+<div class="top-header">
+  <div class="container">
+    <ul>
+      <li><a href="https://ebgames.com.au/stores">Find a store</a></li>
+      <li><a href="https://ebgames.com.au/trade-and-save">Trade &amp; Save</a></li>
+      <li><a href="http://catalogue.ebgamhttps://ebgames.com.aues.com.au" target="_blank">Latest catalogue</a></li>
+      <li><a href="https://ebgames.com.au/customer-service">Customer service centre</a></li>
+      <li><a href="https://ebgames.com.au/account/order-history">Order history</a></li>
+      <li><a href="https://ebgames.com.au/giftcards/balance">Gift cards</a></li>
+    </ul>
+
+    <div id="EBWorldLogin">
+      Already an EB World member?  <a class="button eb-world" data-label="supernav/eb-world" href="/account/sign-in">Login ▶</a>
+    </div>
+  </div>
+</div>
+<div class="header-wrapper">
+  <header class="header">
+    <div class="logo">
+      {{#link 'help_center'}}
+      <img src="{{logo_url}}" alt="{{t 'logo'}}">
+      {{/link}}
+    </div>
+    <div class="nav-wrapper">
+      <span class="icon-menu"></span>
+      <nav class="user-nav" id="user-nav">
+        {{link 'community'}}
+        {{link 'new_request' class='submit-a-request'}}
+      </nav>
+      {{user_info}}
+      <div class="footer-language-selector">
+        {{#if alternative_locales}}
+        <div class="dropdown language-selector" aria-haspopup="true">
+          <a class="dropdown-toggle">
+            {{current_locale.name}}
+          </a>
+          <span class="dropdown-menu dropdown-menu-end" role="menu">
+            {{#each alternative_locales}}
+            <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+              {{name}}
+            </a>
+            {{/each}}
+          </span>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </header>
+</div>
