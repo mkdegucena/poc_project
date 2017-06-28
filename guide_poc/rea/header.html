@@ -1,0 +1,36 @@
+<div class="header-wrapper">
+
+  <div class="logo">
+    {{#link 'help_center'}}
+    <img src="{{logo_url}}" alt="{{t 'logo'}}">
+    {{/link}}
+  </div>
+
+  <header class="header">
+    <div class="left-banner">
+      <ul>
+        <li><a href="https://www.realestate.com.au/buy">Buy</a></li>
+        <li><a href="https://www.realestate.com.au/rent">Rent</a></li>
+        <li><a href="https://www.realestate.com.au/invest">Invest</a></li>
+        <li><a href="https://www.realestate.com.au/sold">Sold</a></li>
+        <li><a href="https://www.realestate.com.au/share">Share</a></li>
+        <li><a href="http://www.realestate.com.au/new-homes/new-apartments">New homes</a></li>
+        <li><a href="hhttp://www.realestate.com.au/retire">Retire</a></li>
+        <li><a href="https://www.realestate.com.au/find-agent">Find agents</a></li>
+        <li><a href="http://www.realestate.com.au/home-ideas">Home ideas</a></li>
+        <li><a href="https://www.realestate.com.au/news">News</a></li>
+        <li><a href="https://www.realestate.com.au/commercial">Commercial</a></li>
+        <li>{{#link 'help_center'}}Help{{/link}}</li>
+      </ul>
+    </div>
+
+    <div class="nav-wrapper">
+      {{!--<span class="icon-menu"></span>--}}
+      {{!--<nav class="user-nav" id="user-nav">
+        {{link 'community'}}
+      </nav>--}}
+      {{link 'new_request' class='submit-a-request'}}
+      {{user_info}}
+    </div>
+  </header>
+</div>

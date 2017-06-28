@@ -1,0 +1,26 @@
+<div class="background-form">
+  <div class="sub-form-bg">
+    <div class="container">
+      <nav class="sub-nav">
+        {{breadcrumbs}}
+        {{search submit=false}}
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="form zd-form">
+      <h3>
+        {{t 'submit_a_request'}}
+        {{#if follow_up}}
+        <span class="follow-up-hint">
+          {{follow_up}}
+        </span>
+        {{/if}}
+      </h3>
+      {{request_form}}
+    </div>
+    <div class="custom-divider"></div>
+    {{chat}}
+  </div>
+</div>

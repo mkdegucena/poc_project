@@ -1,0 +1,73 @@
+<section id="home-page" class="section hero">
+  <div class="hero-inner">
+    <div class="banner-logo">
+      {{#link 'help_center'}}
+      <img src="{{asset 'banner-logo.png'}}" alt="{{t 'logo'}}">
+      {{/link}}
+    </div>
+    {{search submit=true instant=true class='search search-full'}}
+
+    <div class="native-app-promo">
+      <img class="all-devices-icon" src="https://www.realestate.com.au/assets/img/all-devices.e8d4b02f7ab23488d7e7af4fbab5fb7e.png" alt="all devices">
+      <div class="download-native-app">
+        <div class="download-app-content">DOWNLOAD OUR APP</div>
+        <a class="ios-app-link" href="https://itunes.apple.com/au/app/realestate.com.au-australias/id404667893?mt=8&amp;uo=4&amp;at=1l3v7zR&amp;ct=applp_icon">
+          <img class="app-icon ios-icon" src="https://www.realestate.com.au/assets/img/ios-icon.6621342a01af22e393c5f44e9c988272.png" alt="ios icon">
+          <span>iPhone &amp; iPad</span> 
+        </a> 
+        <a class="android-app-link" href="http://c00.adobe.com/59dde73f-7ff2-4994-b426-d1ca666eff93/4uiw87u0/g/au.com.realestate.app">
+          <img class="app-icon android-icon" src="https://www.realestate.com.au/assets/img/android-icon.16c5779b111a520b28e2b9ff9b00af52.png" alt="android icon">
+          <span>Android</span> 
+        </a> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <section class="section knowledge-base">
+    <section class="categories blocks">
+      <ul class="blocks-list">
+        {{#each categories}}
+        <li class="blocks-item">
+          <a href='{{url}}' class="blocks-item-link">
+            <h4 class="blocks-item-title">{{name}}</h4>
+            <p class="blocks-item-description">{{excerpt description}}</p>
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+      {{pagination}}
+    </section>
+
+    {{#if promoted_articles}}
+    <section class="articles">
+      <h3>{{t 'promoted_articles'}}</h3>
+      <ul class="article-list promoted-articles">
+        {{#each promoted_articles}}
+        <li class="promoted-articles-item">
+          <a href="{{url}}">
+            {{title}}
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
+    {{/if}}
+  </section>
+
+  {{#if help_center.community_enabled}}
+  <section class="section community">
+    <h2>{{t 'community'}}</h2>
+    {{#link 'community' class='community-link'}}
+    {{t 'join_conversation'}}
+    {{/link}}
+
+    <div class="community-image"></div>
+  </section>
+  {{/if}}
+
+  <section class="section activity">
+    {{recent_activity}}
+  </section>
+</div>

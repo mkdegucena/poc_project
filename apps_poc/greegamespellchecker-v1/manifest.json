@@ -1,0 +1,14 @@
+{
+  "name": "Title Spellchecker",
+  "author": {
+    "name": "Mon Keith de Gucena",
+    "email": "mdegucena@zendesk.com",
+    "url": ""
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location":  ["ticket_sidebar","new_ticket_sidebar"],
+  "noTemplate": true,
+  "version": "1.0",
+  "frameworkVersion": "1.0"
+}
